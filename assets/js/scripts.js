@@ -25,41 +25,19 @@ jQuery( document ).ready(function($) {
             $(this).toggleClass('rotate-span')
     });
 
+    // Tab Navigation Keyboard
+
     var liParentLink = liParent.find('a')
-    liParentLink.focusin(function() {
+    liParentLink.on( 'keypress focusin' , function() {
+        let ulParent = $(this).parents('ul.active')
+
+        $('.active').not(ulParent).removeClass('active')
+        
         $(this).find('+ ul').addClass('active')
     })
-    
-    let targets = liParentLink.find('+ ul')
 
-    let observer = new MutationObserver(function (mutations) {
-        mutations.forEach(function (mutation) {
-            if (mutation.type === "attributes" && mutation.attributeName === "class") {
-                let $target = $(mutation.target);
-                if ($target.hasClass("active")) {
-                    $target.trigger("classAdded");
-                }
-            }
-        });
-    });
-    console.log(Object.values(targets));
-    
-    for (let i = 0; i < Object.values(targets).length - 2; i++) {
-
-        observer.observe(Object.values(targets)[i], { attributes: true, attributeFilter: ["class"] });
-
-    }
-    
-    // Listen for the custom event
-    liParentLink.find('+ ul').on("classAdded", function () {
-        alert("CSS has changed!");
-        if(liParent.find('+ li').is(':focus')) {
-            console.log('yes');
-            
-            liParentLink.focusout(function() {
-                $(this).find('+ ul').removeClass('active')
-            })
-        }
+    $('li.menu-item:not(li.menu-item-has-children):not(ul.sub-menu li)').on('focusin keypress', function() {
+        $('.active').removeClass('active')
     })
 
     // Searchbar 
