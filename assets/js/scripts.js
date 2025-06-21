@@ -65,7 +65,10 @@ jQuery( document ).ready(function($) {
 
     var menuToggle = $(".menu-toggle"),
         mobileMenu = $(".mobile-menu-wrapper"),
-        translateMenu = function(variable) {mobileMenu.css('transform', 'translate(' + variable + '%, 0)')};
+        translateMenu = function(variable) {mobileMenu.css('transform', 'translate(' + variable + '%, 0)')},
+        headingContainer = $('.heading-container');
+    
+    if(headingContainer.height() != 0) menuToggle.css({ 'top': '8%'})
 
     menuToggle.click(function() {
 

@@ -257,11 +257,11 @@ body.mobile-bar-open {
 }
 
 .heading-container {
-    flex-basis: 100%;
-    position: fixed;
+    width: 100%;
+    /* position: fixed;
     top: 50px;
-    right: 0;
-    z-index: 99999999;
+    right: 0; 
+    z-index: 99999999; */
 }
 
 .top-heading {

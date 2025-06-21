@@ -6,7 +6,7 @@
  */
 
  if ( ! defined( '_DZIRI_VERSION' ) ) {
-	define( '_DZIRI_VERSION', '1.0.0' );
+	define( '_DZIRI_VERSION', '1.0.7' );
 }
 
 if ( ! defined( 'ABSPATH' ) ) {
