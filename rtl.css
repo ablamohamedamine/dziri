@@ -1,0 +1,142 @@
+/* Header */
+
+.main-navigation ul ul li:hover > ul, 
+.main-navigation ul ul li:focus > ul {
+    right: auto;
+    left: -232px;
+}
+
+.main-navigation ul ul li:hover .material-icons {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.cart-items-number {
+    left: -15px;
+    right: auto
+}
+
+/* Home Page */
+
+#swiper-slider .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 40px);
+    right: auto;
+}
+
+#swiper-slider .swiper-slide > div {
+    margin-right: 10%;
+    margin-left: 0;
+}
+
+/* Blog - Single - Breadcrumbs  */
+
+article .entry-meta li, 
+.breadcrumbs li {
+    border-left: 1px solid var(--light-color);
+    border-right: none;
+    padding-left: 20px;
+    padding-right: 0;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.breadcrumbs li {
+    border-left: 1px solid var(--dark-color);
+}
+
+article .entry-meta li:last-child, 
+.breadcrumbs li:last-child {
+    padding-left: 0;
+    border-left: none;
+    margin-left: 0;
+}
+
+.entry-navigation-post .prev-post img {
+    left: 20px;
+    right: auto;
+}
+
+.entry-navigation-post .prev-post {
+    border-left: 1px solid var(--light-grey);
+    border-right: none;
+}
+
+.entry-navigation-post .next-post img {
+    right: 20px;
+    left: auto;
+} 
+
+.entry-navigation-post .next-post .heading, 
+.entry-navigation-post .next-post .title {
+    text-align: left;
+    float: left;
+}
+
+/* Search */
+
+.searchform-submit {
+    left: 0;
+    right: auto;
+}
+
+.menu-button-container {
+    text-align: left;
+}
+
+/* WooCommerce */
+
+.woocommerce table.shop_table .material-icons:nth-of-type(1) {
+    right: 3px;
+    left: auto;
+}
+
+.woocommerce table.shop_table .material-icons:nth-of-type(2) {
+    right: 73px;
+    left: auto;
+}
+
+input[type="tel"] {
+    text-align: right;
+    direction: ltr;
+}
+
+/* Footer */
+
+.back-to-top {
+    left: 20px;
+    right: auto;
+}
+
+/* Responsive */ 
+
+.menu-toggle {
+    left: 5%;
+    right: auto !important;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-wrapper {
+        transform: translate(100%, 0);
+        -webkit-transform: translate(100%, 0);
+        left: auto;
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-wrapper .menu-header-wrapper {
+        justify-content: right;
+        left: 0;
+        right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-container .menu-wrapper li.menu-item-has-children .material-icons {
+        left: 0;
+        right: auto;
+    }
+}
