@@ -60,7 +60,13 @@ add_filter( 'comment_form_fields', 'dziri_edit_comment_form');
  */
 
 function dziri_custom_titles($title) {
-    if (is_shop() || is_product_category() || is_category() || is_tag() || is_product_tag() || is_date() || is_author()) {
+    if(dziri_is_woocommerce_activated()) {
+        $is_woo_page = is_shop() || is_product_category() || is_product_tag();
+    } else {
+        $is_woo_page = false;
+    }
+
+    if ($is_woo_page || is_category() || is_tag() || is_date() || is_author()) {
         $title = str_replace(':', '', ltrim($title, strtok($title, ':')));
         $title = str_replace('</span>', '', $title);
         $title = str_replace('<span>', '', $title);

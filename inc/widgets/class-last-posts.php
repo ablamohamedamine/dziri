@@ -50,12 +50,12 @@ class Last_Posts extends WP_Widget {
         $posts_number = isset( $instance[ 'posts_number' ] ) ? (intval($instance[ 'posts_number' ])) : 3;
         ?>
         <p>
-            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html__( 'Title:', 'dziri' ); ?></label>
-            <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+            <label for="<?php echo esc_attr($this->get_field_id( 'title' )); ?>"><?php esc_html__( 'Title:', 'dziri' ); ?></label>
+            <input class="widefat" id="<?php echo esc_attr($this->get_field_id( 'title' )); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
         </p>
         <p>
-            <label for="<?php echo $this->get_field_id( 'posts_number' ); ?>"><?php esc_html__( 'Posts Number:', 'dziri' ); ?></label>
-            <input class="widefat" id="<?php echo $this->get_field_id( 'posts_number' ); ?>" name="<?php echo $this->get_field_name( 'posts_number' ); ?>" type="number" max="5" value="<?php echo esc_attr($posts_number); ?>" />
+            <label for="<?php echo esc_attr($this->get_field_id( 'posts_number' )); ?>"><?php esc_html__( 'Posts Number:', 'dziri' ); ?></label>
+            <input class="widefat" id="<?php echo esc_attr($this->get_field_id( 'posts_number' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'posts_number' )); ?>" type="number" max="5" value="<?php echo esc_attr($posts_number); ?>" />
         </p>
         <?php
     }

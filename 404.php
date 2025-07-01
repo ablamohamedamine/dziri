@@ -18,8 +18,7 @@ get_header(); ?>
 					esc_url( home_url() ) ); ?>
 			</p>
 			<p>
-				<?php echo sprintf( 
-					__('Or you can search here:', 'dziri') ); 
+				<?php _e('Or you can search here:', 'dziri'); 
 					get_search_form(); ?>
 			</p>
 <?php get_footer(); 

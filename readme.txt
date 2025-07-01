@@ -1,9 +1,9 @@
 === Dziri ===
 Contributors: ablamohamedamine
 Requires at least: 5.3
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 5.4
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,7 +22,7 @@ Dziri is a potent WordPress theme tailored for exceptional online stores. Seamle
 
 == Changelog ==
 
-= 1.0.5 =
+= 1.0.8 =
 * Release The First Version
 
 
@@ -60,8 +60,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 Most modern mobile touch slider and framework with hardware accelerated transitions
 Released under the MIT License
 
+= Material Icons = 
 
+[Material Icons](https://fonts.google.com/icons), We have made these icons available for you to incorporate into your products under the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt). Feel free to remix and re-share these icons and documentation in your products. We'd love attribution in your app's about screen, but it's not required. The only thing we ask is that you not re-sell these icons.
+
+= Google Fonts = 
+
+[Google Fonts](https://fonts.google.com), available under the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt). The original font design and licensing information can be found at Google Fonts: fonts.google.com/attribution.
 
 = Screenshot & WP-Preview Starter Content Licenses =
 
-The same site as screenshot can be imported from here [Dziri Live Demo](https://dziri.teamine.agency) using this image from [wikimedia Commons](https://commons.wikimedia.org/wiki/File:Cosmetics.JPG)
+The same site as screenshot can be imported from here [Dziri Live Demo](https://dziri.teamine.agency) using this image from [StockSnap](https://stocksnap.io/photo/makeup-products-I8SLDUOMYC/)
