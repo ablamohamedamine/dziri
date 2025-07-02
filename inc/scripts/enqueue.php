@@ -19,6 +19,22 @@ function dziri_scripts() {
     // wp_style_add_data( 'dziri-main', 'rtl', true );
 	$custom_css = dziri_get_customizer_colors();
 	wp_add_inline_style( 'dziri-main', $custom_css );
+
+	// Add Style To Shop Page
+
+	if(dziri_is_woocommerce_activated()) {
+		$is_woo_page = is_shop();
+	} else {
+		$is_woo_page = false;
+	}
+
+	if($is_woo_page && ! is_active_sidebar('shop')) {
+		wp_add_inline_style('dziri-main', "{
+			.woocommerce.archive .content-area {
+				max-width: 1170px !important;
+			}
+		}");
+	}
 	
 	$enqueue_files = array('jquery');
 	if(dziri_is_woocommerce_activated()) {

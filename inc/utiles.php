@@ -178,3 +178,4 @@ function dziri_get_customizer_colors() {
     $css = ob_get_clean();
     return $css;
   }
+  

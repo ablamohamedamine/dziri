@@ -604,12 +604,13 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			$actions['update'] = sprintf(
 				'<a href="%1$s" title="%2$s" class="edit">%3$s</a>',
 				esc_url( $this->get_tgmpa_status_url( 'update' ) ),
-				esc_attr__( 'This plugin needs to be updated to be compatible with your theme.', 'dziri'),
-				esc_html__( 'Update Required', 'dziri')
+				esc_attr__( 'This plugin needs to be updated to be compatible with your theme.', 'dziri' ),
+				esc_html__( 'Update Required', 'dziri' )
 			);
 
 			return $actions;
 		}
+
 
 		/**
 		 * Handles calls to show plugin information via links in the notices.
@@ -3587,8 +3588,8 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 					public function add_strings() {
 						if ( 'update' === $this->options['install_type'] ) {
 							parent::add_strings();
-							/* translators: 1: plugin name, 2: action number 3: total number of actions. */
-							$this->upgrader->strings['skin_before_update_header'] = __( 'Updating Plugin %1$s (%2$d/%3$d)', 'dziri');
+							/* translators: 1: plugin name, 2: action number, 3: total number of actions. */
+							$this->upgrader->strings['skin_before_update_header'] = __( 'Updating Plugin %1$s (%2$d of %3$d)', 'dziri');
 						} else {
 							/* translators: 1: plugin name, 2: error message. */
 							$this->upgrader->strings['skin_update_failed_error'] = __( 'An error occurred while installing %1$s: <strong>%2$s</strong>.', 'dziri');
@@ -3600,17 +3601,17 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 								$this->upgrader->strings['skin_upgrade_start'] = __( 'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'dziri');
 								/* translators: 1: plugin name. */
 								$this->upgrader->strings['skin_update_successful'] = __( '%1$s installed and activated successfully.', 'dziri') . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'dziri') . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'dziri') . '</span>.</a>';
-								$this->upgrader->strings['skin_upgrade_end']       = __( 'All installations and activations have been completed.', 'dziri');
-								/* translators: 1: plugin name, 2: action number 3: total number of actions. */
-								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing and Activating Plugin %1$s (%2$d/%3$d)', 'dziri');
+								$this->upgrader->strings['skin_upgrade_end'] = __( 'All installations and activations have been completed.', 'dziri');
+								/* translators: 1: plugin name, 2: action number, 3: total number of actions. */
+								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing and Activating Plugin %1$s (%2$d of %3$d)', 'dziri');
 							} else {
 								// Default installation strings.
 								$this->upgrader->strings['skin_upgrade_start'] = __( 'The installation process is starting. This process may take a while on some hosts, so please be patient.', 'dziri');
 								/* translators: 1: plugin name. */
 								$this->upgrader->strings['skin_update_successful'] = esc_html__( '%1$s installed successfully.', 'dziri') . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'dziri') . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'dziri') . '</span>.</a>';
-								$this->upgrader->strings['skin_upgrade_end']       = __( 'All installations have been completed.', 'dziri');
-								/* translators: 1: plugin name, 2: action number 3: total number of actions. */
-								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing Plugin %1$s (%2$d/%3$d)', 'dziri');
+								$this->upgrader->strings['skin_upgrade_end'] = __( 'All installations have been completed.', 'dziri');
+								/* translators: 1: plugin name, 2: action number, 3: total number of actions. */
+								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing Plugin %1$s (%2$d of %3$d)', 'dziri');
 							}
 						}
 					}

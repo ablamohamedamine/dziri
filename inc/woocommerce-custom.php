@@ -380,3 +380,4 @@ function dziri_after_setup_theme_woocommerce() {
 }
 
 add_action('after_setup_theme', 'dziri_after_setup_theme_woocommerce', 10);
+
