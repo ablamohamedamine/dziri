@@ -48,7 +48,7 @@
 			</nav>
             <?php get_sidebar( 'footer' ); ?>
             <div class="copyright">
-                <p><?php esc_html_e('Made with ❤️ by ', 'dziri'); ?><a href="<?php echo 'https://ablamohamedamine.com'; ?>" target="_blank"><?php esc_html_e('Amine', 'dziri'); ?></a><?php esc_html_e(' From ', 'dziri'); ?><a href="<?php echo 'https://teamine.agency'; ?>" target="_blank"><?php esc_html_e('Teamine Agency', 'dziri'); ?></a></p>
+                <p><?php esc_html_e('Made with ❤️ by ', 'dziri'); ?><a href="<?php echo 'https://teamine.agency'; ?>" target="_blank"><?php esc_html_e('Teamine Agency', 'dziri'); ?></a></p>
             </div>
             </div>
         </footer>

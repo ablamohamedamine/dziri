@@ -3,13 +3,13 @@ Contributors: ablamohamedamine
 Requires at least: 5.3
 Tested up to: 6.8
 Requires PHP: 5.4
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Dziri is a potent WordPress theme tailored for exceptional online stores. Seamlessly integrating WooCommerce, it offers direct checkout for conversions, cash on delivery form, Arabic translation, RTL support, and SEO optimization. Customize effortlessly to reflect your brand. Elevate your e-commerce venture with Dziri.
+Dziri is a powerful WordPress theme designed for outstanding online stores.  It includes cash on delivery, Arabic translation, RTL support, SEO optimization, and a direct checkout for conversions—all while completely integrating with WooCommerce.  Easily customize to represent your brand.  Boost your online business with Dziri.
 
 == Installation ==
 
