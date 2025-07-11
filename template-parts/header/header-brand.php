@@ -12,7 +12,7 @@ $site_title = $args['site_title'];
 <div class="site-branding">
     <?php if ( has_custom_logo() && $site_title ) : ?>
         <div class="site-logo">
-            <a href="<?php  esc_url( home_url( '/' ) ); ?>" class="custom-logo-link">
+            <a href="<?php  esc_url( home_url( '/' ) ); ?>">
                 <?php esc_html(the_custom_logo()); ?>
             </a>
         </div>

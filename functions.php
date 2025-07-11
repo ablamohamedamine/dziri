@@ -5,12 +5,12 @@
  * @package Dziri
  */
 
- if ( ! defined( '_DZIRI_VERSION' ) ) {
-	define( '_DZIRI_VERSION', '1.0.9' );
-}
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
+}
+
+ if ( ! defined( '_DZIRI_VERSION' ) ) {
+	define( '_DZIRI_VERSION', '1.0.10' );
 }
 
 // Check if WooCommerce is active

@@ -31,10 +31,11 @@ input:not(input[type="submit"],
 input[type="checkboxe"], 
 input[type="radio"]), 
 textarea {
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid var(--light-color);
-    outline: none;
+    padding: 10px !important;
+    border: none !important;
+    border-bottom: 1px solid var(--light-color) !important;
+    outline: none !important;
+    border-radius: 0 !important;
 }
 
 input:not(input[type="submit"], 
@@ -1374,7 +1375,8 @@ table.wc-block-cart-items .wc-block-cart-items__row .wc-block-components-product
 }
 
 .woocommerce form .form-row select {
-    height: 44px;
+    height: 44px !important;
+    border-radius: 0;
 }
 
 .woocommerce-checkout .woocommerce-billing-fields > h3,
