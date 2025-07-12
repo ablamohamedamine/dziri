@@ -3,7 +3,7 @@ Contributors: ablamohamedamine
 Requires at least: 5.3
 Tested up to: 6.8
 Requires PHP: 5.4
-Stable tag: 1.0.10
+Stable tag: 1.0.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,9 @@ Dziri is a powerful WordPress theme designed for outstanding online stores.  It 
 
 
 == Changelog ==
+
+= 1.0.11 =
+* Fixe TGMPA Issue
 
 = 1.0.10 =
 * Release The First Version

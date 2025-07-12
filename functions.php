@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
  if ( ! defined( '_DZIRI_VERSION' ) ) {
-	define( '_DZIRI_VERSION', '1.0.10' );
+	define( '_DZIRI_VERSION', '1.0.11' );
 }
 
 // Check if WooCommerce is active
