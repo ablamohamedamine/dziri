@@ -5,8 +5,6 @@ Dziri is a powerful WordPress theme designed for outstanding online stores. It i
 
 ## Badges
 
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 
@@ -57,7 +55,7 @@ If you have any feedback, please reach out to us at ablamohamedamine@gmail.com
 
 ## Screenshots
 
-![App Screenshot](https://i0.wp.com/themes.svn.wordpress.org/dziri/1.0.9/screenshot.png?w=post-thumbnail&strip=all)
+![App Screenshot](https://i0.wp.com/themes.svn.wordpress.org/dziri/1.0.11/screenshot.png?w=post-thumbnail&strip=all)
 
 ## Logo
 
